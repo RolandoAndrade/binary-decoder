@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Decodificador binario</title>
+    <style>
+        body
+        {
+            text-align: center;
+            font-family: Verdana;
+            background: #587dff;
+        }
+        .inputs
+        {
+            display: inline-block;
+        }
+        .out
+        {
+            display: inline-block;
+            font-size: 420px ;
+            padding: 0;
+            margin-left: 50px;
+            color: #8395ff;
+        }
+        .button
+        {
+            padding: 25px;
+            background: #afb2af;
+            border: none;
+            display: block;
+            margin: 5px;
+            color: #fff;
+        }
+        .button.b
+        {
+            background: rebeccapurple;
+        }
+    </style>
 </head>
 <body>
+    <div class="inputs">
+        <button id="b1" class="button" onclick="change(1)">3</button>
+        <button id="b2" class="button" onclick="change(2)">2</button>
+        <button id="b3" class="button" onclick="change(3)">1</button>
+        <button id="b4" class="button" onclick="change(4)">0</button>
+        <button class="button b" onclick="learn()">A</button>
+    </div>
+    <div class="out">
+        <div class="result" id="answer">0</div>
+    </div>
+
+
     <script src="js/shapes.js"></script>
+
     <script src="js/activationFunctions.js"></script>
     <script src="js/dataStructures.js"></script>
     <script src="js/perceptron.js"></script>
