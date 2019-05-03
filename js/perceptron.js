@@ -4,10 +4,10 @@ class Perceptron
     {
         this.activationFunction = activationFunction;
         this.weights=[];
-        this.bias=Math.random()*2-1;
+        this.bias=Math.random()*16-Math.random()*8;
         for(let i=0;i<numberOfInputs;i++)
         {
-            this.weights.push(Math.random()*2-1);
+            this.weights.push(Math.random()*16-Math.random()*8);
         }
         this.weights=new Vector(this.weights);
         this.learningRate=learningRate;

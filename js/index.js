@@ -49,6 +49,7 @@ function learn()
     {
         p.learn(inputs,outs);
     }
+    console.log(p.weights);
     displayScreen();
 
 }
